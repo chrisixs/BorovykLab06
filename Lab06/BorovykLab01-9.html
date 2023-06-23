@@ -1,0 +1,53 @@
+<html>
+<head>
+<title> Навчальний файл HTML</title>
+<meta charset=UTF-8>
+<meta name="Description" content="About myself">
+<meta name="Description" content="About myself, My hobby, hobby, introduction, student">
+</head>
+<body bgcolor="D8BFD8">
+<a href="BorovykLab05-3.html">MAIN PAGE</a>
+<p><h1 align="center">Про себе</h1></p>
+<p><font align="justify" size="8" color="FF6347">My name is <font color="#A52A2A"><b><i>Borovyk Christina</i></b></font>. I’m a student for bachelor`s in computer science. <i>I’m usually an emotional and active person.</i> My life is very diverse. I think that I have a charitable nature, because I always help people. I’m usually calm, but <font color="006400">sometimes I can lose my temper and become either angry or sad.</font> I like to laugh and joke. I have got a sense of <mark>humor</mark>. I’m a hard-working and ambitious person. I set high goals for myself and I work hard to reach them. I’m sociable, so I have lots of friends.</font></p>
+<h1 align="center"><i>Моє </i><u>хобі</u></h1>
+<p><font align="justify" color="808000" size="7">Listening to music <u>has always been my go to activity</u> for all occasions. My love for music can be traced back to when I was a child. There are recorded videos of me as a child becoming <b>hyperactive</b> whenever music was played. I would run to the stereo, turn on the music to full volume and start <mark>running around dancing.</mark> Anyone who dared touch the sound system would face my wrath. <font color="#5F9EA0"><i>Music was the only thing that could calm me down whenever I cried.</i></font></font></p>
+<h2>Програмування</h2>
+<code>"use strict";
+function createSafePerimeterAndArea() {
+  var width = 0;
+  var height = 0;
+  var arr = [];
+  arr[0] = function (newWidth) {
+    if (typeof newWidth == "number" && newWidth >= 0) {
+      width = newWidth;
+    }
+  };
+  arr[1] = function (newHeight) {
+    if (typeof newHeight == "number" && newHeight >= 0) {
+      height = newHeight;
+    }
+  };
+  arr[2] = function () {
+    return 2 * (width + height);
+  };
+  arr[3] = function () {
+    return width * height;
+  };
+  return arr;
+}
+
+var PAndS = createSafePerimeterAndArea();
+PAndS[0](2);
+PAndS[1](5);
+console.log("P = " + PAndS[2]() + "; S = " + PAndS[3]());
+PAndS[0](-3);
+console.log("P = " + PAndS[2]() + "; S = " + PAndS[3]());
+PAndS[0](3);
+console.log("P = " + PAndS[2]() + "; S = " + PAndS[3]());
+PAndS[1]("4");
+console.log("P = " + PAndS[2]() + "; S = " + PAndS[3]());
+PAndS[1](4);
+console.log("P = " + PAndS[2]() + "; S = " + PAndS[3]());</code>
+<p align="right"><font><i><u>Студентка групи 301-ТН Боровик К.С.</u></i></font></p>
+</body>
+</html>
